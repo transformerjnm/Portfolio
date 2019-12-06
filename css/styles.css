@@ -316,7 +316,7 @@ footer a {
 	transition-duration: 150ms;
 
 }
-
+/*About Me Section*/
 .jacob_picture {
 	max-height: 400px;
 	max-width: 70vw;
@@ -328,7 +328,17 @@ footer a {
 	-ms-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 	-o-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
-
+.button {
+	background-color: var(--font-color);
+	color: var(--accent-background);
+	max-width: 300px;
+	margin: auto;
+	border-radius: 15px;
+	
+}
+.button a, .button a:visited{
+	color: var(--accent-background);
+}
 /*-----Education Section-----*/
 /*entire ul*/
 .edu-ul {
