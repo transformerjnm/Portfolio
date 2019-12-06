@@ -1,0 +1,9 @@
+
+# HTID:9307241: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:9307241:
+DirectoryIndex public/index.php
+ErrorDocument 404 https://jnmportfolio.000webhostapp.com/portfolio/webtemplate/public/index.php
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://jnmportfolio.000webhostapp.com/portfolio/webtemplate/public/index.php [R,L]

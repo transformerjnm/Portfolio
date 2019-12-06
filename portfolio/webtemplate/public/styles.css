@@ -1,0 +1,244 @@
+/*-----Border Box Fix*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*-----Color Pallets and css var-----*/
+:root {
+	--outline-color: #1d3461;
+  --outline-color-rgba: rgba(51, 84,	87, .5);
+	--section-light: white;
+  --accent-color: #fb3640;
+	--space-around: 1rem;
+  --font-color: black;
+}
+
+/*-----Global Styles-----*/
+html {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	background-color: var(--section-light);
+	color: var(--font-color);
+  line-height: 200%;
+}
+
+
+
+/*-----header-----*/
+nav {
+	text-align: center;
+	background-color: var(--outline-color);
+	padding: 1rem;
+	font-size: 1.25rem;
+  border-radius: 0 0 30px 30px;
+  z-index: 10;
+}
+
+nav ul {
+	margin: 0;
+	list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+	margin: 0;
+	padding: .25rem;
+}
+
+nav a {
+	color: var(--section-light);
+	font-weight: bold;
+}
+
+/*make links easer to click on mobile*/
+a {
+	padding: .5rem;
+	text-decoration: none;
+}
+
+/*-----main-----*/
+h1 {
+	min-height: 40px;
+	margin: 0;
+	text-align: center;
+	font-size: 1.75rem;
+}
+
+/*hero*/
+.hero1 {
+  background-image: linear-gradient( var(--outline-color-rgba), var(--outline-color-rgba)), url(images/hero2-passon-led-us-here.jpg);
+	background-size: cover;
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+  border-radius: 0 0 40% 40%;
+}
+.hero2 {
+  background-image: linear-gradient( var(--outline-color-rgba), var(--outline-color-rgba)), url(images/hero1-wireframe.jpg);
+	background-size: cover;
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+  border-radius: 0 0 40% 40%;
+}
+
+.hero3 {
+  background-image: linear-gradient( var(--outline-color-rgba), var(--outline-color-rgba)), url(images/hero3-telephones.jpg);
+	background-size: cover;
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+  border-radius: 0 0 40% 40%;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: var(--section-light);
+}
+
+.section-light {
+	padding: var(--space-around);
+	text-align: center;
+	display: flex;
+}
+
+.section-dark {
+	padding: var(--space-around);
+	text-align: center;
+	display: flex;
+}
+
+section img {
+	height: 3rem;
+	flex-grow: 1;
+}
+
+section p {
+	flex-grow: 3;
+}
+
+/*elimated the p from creating space between sections*/
+section p {
+	margin: 0;
+}
+
+/*form*/
+
+form {
+	display: block;
+	padding-bottom: var(--space-around);
+	width: 80%;
+	margin: auto;
+	font-size: 2rem;
+  border-radius: 15px;
+}
+legend{
+	background-color: var(--outline-color);
+	color: var(--section-light);
+	margin-bottom: var(--space-around);
+  border-radius: 15px;
+}
+label{
+  display: block;
+}
+input {
+  width: 80%;
+  height: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid;
+}
+.submit{
+  background-color: var(--accent-color);
+  color: var(--section-light);
+  border-radius: 30px;
+  border: none;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+form span {
+	font-size: .5rem;
+}
+form a {
+	color: var(--outline-color);
+}
+.register_btn{
+  background-color: var(--accent-color);
+  color: var(--section-light);
+  width: 80%;
+  height: 3rem;
+  border-radius: 30px;
+  display: block;
+  margin: auto;
+  font-size: 1.5rem;
+}
+.error{
+	background-color: black;
+}
+/*-----footer-----*/
+footer {
+	text-align: center;
+	height: 40px;
+	background-color: var(--outline-color);
+	color: var(--section-light);
+  border-radius: 30px 30px 0 0;
+}
+
+footer a {
+	color: var(--section-light);
+  border-radius: 15px 15px 0 0;
+}
+/*On tablet and bigger */
+@media only screen and (min-width: 500px){
+	html {
+		font-size: 18px;
+    line-height: 250%;
+	}
+  header{
+        margin-bottom: -50px;
+  }
+	nav {
+		padding: 0;
+		width: 100vw;
+		height: 40px;
+		text-align: center;
+		position: fixed;
+		top: 0;
+		background-color: var(--outline-color);
+
+	}
+
+	nav ul {
+
+		list-style-type: none;
+    padding: 0;
+	}
+
+	nav li {
+
+		display: inline-block;
+
+	}
+
+	nav a {
+
+		color: var(--section-light);
+		font-weight: bold;
+		line-height: 40px;
+
+	}
+	main{
+		padding-top: 40px;
+	}
+}
