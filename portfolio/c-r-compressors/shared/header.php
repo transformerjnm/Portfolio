@@ -17,6 +17,8 @@
 	<link rel="icon" type="image/jpg" href="images/r&c_logo.jpg">
 	<link rel="canonical" href="http://localhost/R-C-compressors/index.php">
 	<title>R&amp;C Compressors</title>
+
+
 </head>
 
 <body>

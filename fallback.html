@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- set browser color to them color. only supported in sertain mobile devices as of 5/13/19-->
+	<meta name="theme-color" content="#FF7700">
+	<meta name="apple-mobile-web-app-status-bar" content="#FF7700">
+	<!-- favicon.browser will use the correct one based on their needs -->
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+ 	<link rel="manifest" href="/manifest.json">
+	<!-- <link rel="stylesheet preconnect" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- Google Fonts-->
+	 <link   href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet noopener">
+     <link  href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet noopener">
+     <meta name="description" content="Hi! It’s Jacob Mitchell, and this is my web developer portfolio. This page loads when you try to view a page you can't view offline." />
+     <title>Jacob Mitchell Web Developer Portfolio</title>
+     <link rel="canonical" href="https://jnmportfolio.000webhostapp.com" />
+     </head>
+     <body>
+        <header>
+			<nav id="nav" class="navfadein">
+				<!-- mobile nav opener/logo-->
+				<div class="mobile_nav_logo" aria-label="icon that you click to open mobile navigation">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+				<!-- Desktop Navigation-->
+				<ul>
+					<li><a href="index.html#me">About</a></li>
+					<li><a href="index.html#port">Projects</a></li>
+					<li><a href="index.html#skills">Skills</a></li>
+					<li><a href="index.html#edu">Education</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<!-- Mobile Navigation-->
+			<div class="mobile_nav">
+				<ul>
+					<li><a href="index.html#me">About</a></li>
+					<li><a href="index.html#port">Projects</a></li>
+					<li><a href="index.html#skills">Skills</a></li>
+					<li><a href="index.html#edu">Education</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+				</ul>
+			</div>
+			<div class="canvas_container">
+				<canvas id="canvas1">Your Browser dose not support HTML5 Canvas</canvas>
+				<div class="hero1 hero-img"></div>
+			</div>
+
+			<div class="herocontent">
+				<h1>Unable to Load page offline</h1>
+                     <h2>Sorry, the page you request requires internet conection.</h2>
+                     
+			</div>
+		</header>
+        <footer>
+            <span><a href="/">Go to Home Page</a></span><br>
+			<span><a href="mailto:jacob.mitchell157@gmail.com">Jacob.Mitchell157@gmail.com</a></span><br>
+			<span>Font Awesome License: <a target="_blank" rel="noopener" href="https://fontawesome.com/license">https://fontawesome.com/license</a></span><br>
+			<span>&copy; 2019 Jacob Mitchell</span><br>
+		</footer>
+	<script type="text/javascript" src="js/mobilenav.js"></script>
+	<script type="text/javascript" src="js/canvas.js" defer></script>
+	<script type="text/javascript" src="js/app.js"></script>
+     </body>
+ </html>
