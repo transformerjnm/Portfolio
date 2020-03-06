@@ -375,41 +375,6 @@ footer a {
 	display: inline;
 }
 
-.skill_bar {
-	border: 1px solid var(--font-color);
-	width: 100%;
-}
-
-.skill_level {
-	background-color: var(--font-color);
-	margin: 2px;
-	height: .25rem;
-}
-
-.html_skill {
-	width: 80%;
-}
-
-.css_skill {
-	width: 80%;
-}
-
-.m_css_skill {
-	width: 90%;
-}
-
-.php_skill {
-	width: 60%;
-}
-
-.mysql_skill {
-	width: 40%;
-}
-
-.js_skill {
-	width: 60%;
-}
-
 /*icon colors and size for img*/
 .html {
 	color: blue;
@@ -428,13 +393,16 @@ footer a {
 .js {
 	color: purple;
 }
-
+.react {
+	color: lightblue;
+}
 .mysql,
 .m_css,
 .html,
 .css,
 .php,
-.js {
+.js,
+.react {
 	height: 1rem;
 }
 
