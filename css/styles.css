@@ -368,13 +368,9 @@ footer a {
 	max-width: 1000px;
 	margin: auto;
 }
-
 .skill_container h4 {
-	margin-bottom: 0;
-	margin-top: .5rem;
 	display: inline;
 }
-
 /*icon colors and size for img*/
 .html {
 	color: blue;
@@ -393,9 +389,7 @@ footer a {
 .js {
 	color: purple;
 }
-.react {
-	color: lightblue;
-}
+
 .mysql,
 .m_css,
 .html,
