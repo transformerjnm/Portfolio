@@ -1,7 +1,7 @@
 /* navigator is an object that represent the browser and the information in it.  */
 /* Dose the browser support service workers */
 if( 'serviceWorker' in navigator ){
-    /* asynchronous */
+    /* asynchronous creates service worker */
     navigator.serviceWorker.register( '/sw.js' )
     /* once service worker has finished registering */
     //.then((reg) => console.log('Service Worker Registered', reg))
