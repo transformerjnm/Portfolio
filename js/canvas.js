@@ -156,9 +156,13 @@ window.addEventListener( "load", function ( ) {
             //MAIN FUNCTION
             // this function make the blank canvas then calls the stars
             function animate( ) {
+                
+                //limit to 45 frames. 1000/fps give mil sec to setTimout for
+                setTimeout(() => {
+                    requestAnimationFrame( animate )
+                }, 22)
 
-                requestAnimationFrame( animate )
-
+               console.log("ran");
                 //reset canvas inbetween frames
                 ctx.clearRect( 0, 0, theCanvas.width, theCanvas.height );
                 //for every circle re draw it for every frame
@@ -170,7 +174,9 @@ window.addEventListener( "load", function ( ) {
                 });
 
             }
+
+         
             animate( );
         }
-    }
+    }//context(ctx) of canvas if end
 });
