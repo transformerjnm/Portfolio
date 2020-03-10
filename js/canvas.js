@@ -162,7 +162,6 @@ window.addEventListener( "load", function ( ) {
                     requestAnimationFrame( animate )
                 }, 22)
 
-               console.log("ran");
                 //reset canvas inbetween frames
                 ctx.clearRect( 0, 0, theCanvas.width, theCanvas.height );
                 //for every circle re draw it for every frame
