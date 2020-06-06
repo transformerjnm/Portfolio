@@ -287,6 +287,7 @@ not apply to section dark as it is not effected by this negitive space.
 	grid-column-start: 2;
 	grid-column-end: 11;
 	padding: .75rem;
+	margin: .75rem;
 }
 
 /*flex*/
@@ -581,6 +582,22 @@ footer a {
 	.slideinimg.showimg {
 		transform: translateX(0%);
 		opacity: 1;
+	}
+}
+
+@media only screen and ( min-width: 1700px ) {
+	body {
+		line-height: 300%;
+	}
+	.section-light {
+		padding-top: 7rem;
+		padding-bottom: 7rem;
+	}
+	
+	.section-dark {
+
+		padding-top: 7rem;
+		padding-bottom: 7rem;
 	}
 }
 
