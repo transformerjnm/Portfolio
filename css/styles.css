@@ -48,7 +48,13 @@ p::first-letter {
 	letter-spacing: .15rem;
 	font-weight: bold;
 }
-
+.github {
+	height: 2rem;
+	width: 2rem !important;
+	min-width: 2rem !important;
+	position: unset !important;
+	margin-left: .75rem;
+}
 /*-----Page order-----*/
 /*mobile nav*/
 .mobile_nav_logo {
@@ -294,8 +300,6 @@ not apply to section dark as it is not effected by this negitive space.
 	justify-content: space-around;
 }
 
-
-
 footer {
 	background-color: var(--accent-background);
 	position: relative;
@@ -317,17 +321,6 @@ footer a {
 
 }
 /*About Me Section*/
-.jacob_picture {
-	max-height: 400px;
-	max-width: 70vw;
-	display: block;
-	margin: auto;
-	clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-	-webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-	-moz-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-	-ms-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-	-o-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-}
 .button {
 	background-color: var(--font-color);
 	color: var(--accent-background);
@@ -545,18 +538,6 @@ footer a {
 		min-width: 100%;
 		position: relative;
 		top: 25%;
-
-	}
-
-	.jacob_picture {
-		float: left;
-		max-height: 400px;
-		shape-outside: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-		-webkit-shape-outside: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-		-moz-shape-outside: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-		-ms-shape-outside: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-		-o-shape-outside: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-		margin: auto .5rem auto auto;
 
 	}
 
