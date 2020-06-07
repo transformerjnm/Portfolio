@@ -33,7 +33,6 @@ body {
 	line-height: 250%;
 	background-color: var(--accent-background);
 	font-family: 'Quicksand', sans-serif;
-
 }
 
 p::first-letter {
@@ -48,6 +47,7 @@ p::first-letter {
 	letter-spacing: .15rem;
 	font-weight: bold;
 }
+
 .github {
 	height: 2rem;
 	width: 2rem !important;
@@ -55,7 +55,9 @@ p::first-letter {
 	position: unset !important;
 	margin-left: .75rem;
 }
+
 /*-----Page order-----*/
+
 /*mobile nav*/
 .mobile_nav_logo {
 	width: 100vw;
@@ -122,7 +124,6 @@ nav a {
 }
 
 nav {
-
 	color: var(--font-color);
 	position: fixed;
 	z-index: 1;
@@ -155,18 +156,10 @@ nav li {
 	animation-fill-mode: forwards;
 }
 
-/*.navfadeout {
-	animation-name: navfade;
-	animation-duration: .75s;
-	animation-direction: reverse;
-	animation-fill-mode: forwards;
-}*/
-
 @keyframes navfade {
 	from {
 		background-color: transparent;
 	}
-
 	to {
 		background-color: var(--accent-rgba);
 	}
@@ -245,10 +238,10 @@ h3:hover {
 }
 
 /*
-section light top and bottom padding are differnt due to negative space created by the clip path. On the bottom
+section light top and bottom padding are different due to negative space created by the clip path. On the bottom
 the clip path cuts downward making it feel like more space. top cuts into the space making it feel like less space. I
-determied the current values by offsetingt them by 7rem. The clip path is 7vh deep. This makes it feel equal. Dose
-not apply to section dark as it is not effected by this negitive space.
+determined the current values by offsetting them by 7rem. The clip path is 7vh deep. This makes it feel equal. Dose
+not apply to section dark as it is not effected by this negative space.
 */
 .section-light {
 	background-color: var(--section-light);
@@ -280,7 +273,6 @@ not apply to section dark as it is not effected by this negitive space.
 	/*12 col grid all equal col*/
 	grid-template-columns: repeat(11, 1fr);
 	grid-row-gap: 3rem;
-
 }
 
 .col_container {
@@ -305,7 +297,6 @@ footer {
 	font-size: .75rem;
 	text-align: center;
 	line-height: 150%;
-
 }
 
 footer a {
@@ -316,8 +307,8 @@ footer a {
 .show_hover:hover {
 	transform: scale(1.1);
 	transition-duration: 150ms;
-
 }
+
 /*About Me Section*/
 .button {
 	background-color: var(--font-color);
@@ -325,15 +316,17 @@ footer a {
 	max-width: 300px;
 	margin: auto;
 	border-radius: 15px;
-	
 }
+
 .button a, .button a:visited{
 	color: var(--accent-background);
 }
+
 /*-----Education Section-----*/
 #edu {
 	grid-row-gap: 0;
 }
+
 /*entire ul*/
 .edu-ul {
 	list-style-type: none;
@@ -360,22 +353,26 @@ footer a {
 #skills {
 	grid-row-gap: 0;
 }
+
 #skills h2 {
 	grid-column-start: 1;
 	grid-column-end: 12;
 }
+
 .skill_col_1 {
 	grid-column-start: 2;
 	grid-column-end: 10;
-
 }
+
 .skill_col_2{
 	grid-column-start: 2;
 	grid-column-end: 10;
 }
+
 #skills h4 {
 	display: inline;
 }
+
 /*icon colors and size for img*/
 .html {
 	color: blue;
@@ -544,25 +541,27 @@ footer a {
 		min-width: 100%;
 		position: relative;
 		top: 25%;
-
 	}
 
 	.portfolio p {
 		min-height: 10vw;
 	}
+
 	/*skills grid sizing*/
 	#skills {
 		grid-row-gap: 1rem;
 	}
+
 	.skill_col_1 {
 		grid-column-start: 2;
 		grid-column-end: 6;
-	
 	}
+
 	.skill_col_2{
 		grid-column-start: 7;
 		grid-column-end: 10;
 	}
+
 	/* img animation*/
 	/*required me to put all the classes would not work with just updating one*/
 	.slideinimg {
@@ -583,23 +582,27 @@ footer a {
 		transform: translateX(0%);
 		opacity: 1;
 	}
-}
 
+}/*phablet, tablet, desktop media query*/
+
+/*widescreen desktop*/
 @media only screen and ( min-width: 1700px ) {
+
 	body {
 		line-height: 300%;
 	}
+
 	.section-light {
 		padding-top: 7rem;
 		padding-bottom: 7rem;
 	}
 	
 	.section-dark {
-
 		padding-top: 7rem;
 		padding-bottom: 7rem;
 	}
-}
+
+}/*widescreen desktop*/
 
 /*mobile portrait mode show mobile nav*/
 @media only screen and (max-height: 800px) {
@@ -614,4 +617,5 @@ footer a {
 	nav ul {
 		display: none;
 	}
-}
+
+}/*mobile portrait mode show mobile nav*/
