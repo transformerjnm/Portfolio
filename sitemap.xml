@@ -4,15 +4,19 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 <url>
-  <loc>https://jnmportfolio.000webhostapp.com</loc>
-  <lastmod>2020-03-06T21:05:45+00:00</lastmod>
+  <loc>https://jnmportfolio.000webhostapp.com/index.html</loc>
+  <lastmod>2020-06-08T17:55:19+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://jnmportfolio.000webhostapp.com/jacob_mitchell_resume.pdf</loc>
-  <lastmod>2020-03-06T20:41:37+00:00</lastmod>
+  <lastmod>2020-06-06T19:07:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
+
 </urlset>
