@@ -90,7 +90,7 @@ self.addEventListener( 'activate', evt => {
 
 self.addEventListener( 'fetch', evt => {
 
-    //console.log('fentch Event', evt);
+    //console.log('fetch Event', evt);
     evt.respondWith(
 
         //check if requested asset is cashed
@@ -107,7 +107,7 @@ self.addEventListener( 'fetch', evt => {
                         cache.put( evt.request.url, fetchRes.clone( ) );
                         limitCacheSize( dynamicCacheName, 15 );
                         return fetchRes;
-                        
+
                     } )
 
                 } );

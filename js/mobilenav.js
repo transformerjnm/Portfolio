@@ -1,4 +1,4 @@
-/*moile navigation*/
+/*mobile navigation*/
 let nav_active = false;
 let mobile_nav_logo = document.querySelector( '.mobile_nav_logo' );
 let mobile_nav = document.querySelector( '.mobile_nav' );
@@ -14,16 +14,17 @@ mobile_nav_logo.addEventListener( 'click',
 
 	}
 
-);
+);// mobile nav logo click
 
 //function that set mobile navigation to inactive
 function remove_mobile_nav_classes( ) {
 
 		mobile_nav.classList.remove( 'mobile_nav_active' );
-			mobile_nav_logo.classList.remove( 'mobile_logo_active' );
-			nav_active = !nav_active;
+		mobile_nav_logo.classList.remove( 'mobile_logo_active' );
+		//set nav active to the opposite value
+		nav_active = !nav_active;
 			
-}
+}//remove mobile nav function
 
 
 let main = document.querySelector( 'main' );
@@ -33,9 +34,11 @@ let footer = document.querySelector( 'footer' );
 
 //if  mobile nav is open and clicked outside of nav. close  mobile nav
 if ( nav_active = true ) {
+
 	/*would not let me select body or header so had to do them individualy*/
 	main.addEventListener( 'click', remove_mobile_nav_classes );
 	header.addEventListener( 'click', remove_mobile_nav_classes );
 	herocontent.addEventListener( 'click', remove_mobile_nav_classes );
 	footer.addEventListener( 'click', remove_mobile_nav_classes );
+
 }
