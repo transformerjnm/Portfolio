@@ -12,10 +12,13 @@ function preload_img( img ) {
 
   } else {
 
+    //set the src of image to lazy src value
     img.src = src;
 
   }
-}
+
+}//preload img function
+
 //loading options. such as how far ahead to load in.
 const img_options = {
 
@@ -26,7 +29,7 @@ const img_options = {
 
 //callable image observer. dose not run till called
 const img_observer = new IntersectionObserver( ( entries, img_observer ) => {
-  //for every entrie that the observer is called on
+
   entries.forEach( entry => {
 
     //not intersection
@@ -42,15 +45,17 @@ const img_observer = new IntersectionObserver( ( entries, img_observer ) => {
 
       /*show img*/
       preload_img( entry.target );
+      
       /*animate img in*/
       entry.target.classList.add( 'showimg' );
 
     }
 
   } )
-}, img_options );
 
-//calls the intersection observer on all images on the page for lazt loading
+}, img_options ); //const img observer
+
+//calls the intersection observer on all images on the page for lazy loading
 images.forEach( images => {
 
   img_observer.observe( images );
