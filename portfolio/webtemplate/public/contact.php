@@ -53,13 +53,13 @@ if (is_post_request()){
 		<input placeholder="Email" type="email" name="email"maxlength="75"> <br>
 
 	<label for="firstname">First Name:</label>
-		<input placeholder="Firstname" name="firstname" type="text" maxlength="25"> <br> <br>
+		<input placeholder="Firstname" name="firstname" type="text" maxlength="25"> <br> 
 
 	<label for="lastname">Last Name:</label>
-		<input placeholder="Lastname"name="lastname" type="text" maxlength="25"> <br> <br>
+		<input placeholder="Lastname"name="lastname" type="text" maxlength="25"> <br> 
 
 	<label for="message">Message:</label>
-		<input placeholder="Message" name="msg" type="text" maxlength="175"> <br> <br>
+		<input placeholder="Message" name="msg" type="text" maxlength="175"> <br> 
 
 		<input class="submit" type="submit" value="Submit">
 	</form>
