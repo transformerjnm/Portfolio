@@ -15,7 +15,8 @@ ob_start();
 		<header>
 			<nav>
 				<ul>
-						<li><a href="https://jnmportfolio.000webhostapp.com/">Portfolio</a></li>
+
+					<li><a href="https://jnmportfolio.000webhostapp.com/">Portfolio</a></li>
 					<li><a href="https://jnmportfolio.000webhostapp.com/portfolio/webtemplate/public/index.php">Home</a></li>
 					<li><a href="https://jnmportfolio.000webhostapp.com/portfolio/webtemplate/public/template.php">Templates</a></li>
 					<li><a href="https://jnmportfolio.000webhostapp.com/portfolio/webtemplate/public/contact.php">Contact</a></li>
@@ -32,6 +33,7 @@ ob_start();
 					<?php if($_SESSION['admin'] ?? false){?>
 						<li><a href="https://jnmportfolio.000webhostapp.com/portfolio/webtemplate/public/admin.php">Admin</a></li>
 					<?php }?>
+					
 				</ul>
 			</nav>
 		</header>

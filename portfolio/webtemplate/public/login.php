@@ -30,15 +30,24 @@ if (is_post_request()){
 	<div class="login_errors"><?php echo $errors; ?></div>
 
 	<form action="login.php" method="post">
+
 		<legend>Enter Username and Password</legend>
-		<label for="Email">Email(username):</label>
+
+		<label for="Email">Email( User Name ):</label>
 			<input name="email" type="text" placeholder="Email" maxlength="75"> <br>
+
 		<label for="password">Password:</label>
-			<input placeholder="password" name="password" type="password" maxlength="25"> <br> <br>
+			<input placeholder="password" name="password" type="password" maxlength="25"> <br>
+
 		<input class="submit" name="login" type="submit" value="Login">
 		<br>
-		<br>
-		<div><a class="register_btn" href="https://jnmportfolio.000webhostapp.com/portfolio/webtemplate/public/register.php">Register Here</a></div>
+
+		<div class="register_btn">
+
+			<a  href="https://jnmportfolio.000webhostapp.com/portfolio/webtemplate/public/register.php">Register Here</a>
+
+		</div>
+
 	</form>
 
 </section>
