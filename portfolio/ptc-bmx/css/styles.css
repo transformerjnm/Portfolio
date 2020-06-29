@@ -1,0 +1,91 @@
+
+
+.maincolor {
+	background-color: #eb1e25;
+}
+.secondarycolor {
+	background-color: #f09618;
+}
+.alert{
+	max-height: 3em;
+	padding: 0;
+}
+h3 {
+	font-size: 2em;
+	margin: 0;
+}
+
+p {
+	padding: 5px;
+	margin: 0;
+}
+
+.calendar{
+  position: relative;
+  height: 800px;;
+  width: 100%;
+  
+}
+.calendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.map {
+	width: 100%;
+	height: 400px;
+}
+sidenavfix{
+	z-index: 6;
+}
+.bold{
+	font-weight: bold;
+}
+.imgsize{
+	width: 100%;
+	height: auto;
+	max-height: 800px;
+	margin: 0;
+}
+.imgsizesmall{
+	max-height: 280px;
+	margin: 0;
+}
+.sponsimg{
+	min-height: 100px;
+	width: auto;
+}
+.sponsor{
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+.marginzero{
+	margin: 0;
+}
+.margintopzero{
+	margin-top: 0;
+}
+.facebook{
+	color: blue;
+	font-size: 5em;
+}
+/* large */
+@media only screen and (max-width: 1200px){
+	.calendar{
+		height: 700px;
+	}
+}
+/* medium */
+@media only screen and (max-width: 992px){
+	.calendar{
+		height: 600px;
+	}
+}
+/* small */
+@media only screen and (max-width: 600px){
+	.calendar{
+		height: 500px;
+	}
+}
