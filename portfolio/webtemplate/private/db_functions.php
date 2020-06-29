@@ -1,7 +1,7 @@
 <?php
 
 function db_connect(){
-    $connecting = mysqli_connect('localhost', 'id7280983_jmitch37', '2352webuser', 'id7280983_webtemplate');
+    $connecting = mysqli_connect('localhost', 'jacob_jmitch37', '2352webuser', 'jacob_id7280983_webtemplate');
     //$connecting = mysqli_connect('localhost', 'webuser', 'webuser', 'web_template');
     confirm_db_connect();
     return $connecting;
