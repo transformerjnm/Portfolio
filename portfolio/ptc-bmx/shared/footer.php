@@ -33,7 +33,7 @@
 			</div>
 		</div>
 		<div class="footer-copyright">
-			<p>Copyright &copy; 2018 Jacob Mitchell</p>
+			<p>Copyright &copy; 2018 PeachTree City BMX</p>
 			<p class="right-align">
 				Last Updated:
 				<?php echo $lastupdate ?>
