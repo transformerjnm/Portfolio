@@ -1,8 +1,3 @@
 User-agent: *
-Disallow: /portfolio/
-Disallow: /images/
-Disallow: /imagesmobile/
-Disallow: /js/
-Disallow: /css/
 Noindex: /portfolio/
-Sitemap: https://jnmportfolio.000webhostapp.com/sitemap.xml
+Sitemap: https://jacobportfolio.com/sitemap.xml
