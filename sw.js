@@ -1,5 +1,5 @@
-const staticCacheName = 'site-static-v3';
-const dynamicCacheName = 'dynamic-cache-v1';
+const staticCacheName = 'site-static-v1';
+const dynamicCacheName = 'dynamic-cache-v2';
 const assets = [
     '/',
     '/index.html',
@@ -29,100 +29,64 @@ const assets = [
     'https://fonts.googleapis.com/css?family=Pacifico&display=swap',
 ];
 
-const limitCacheSize = ( name, size ) => {
-
-    caches.open( name ).then( cache => {
-
-        cache.keys( ).then( keys => {
-
-            if( keys.length > size ) {
-
-                cache.delete( keys[0] ).then( limitCacheSize( name, size ) );
-
+const limitCacheSize = (name, size) => {
+    caches.open(name).then(cache => {
+        cache.keys().then(keys => {
+            if(keys.length > size) {
+                cache.delete(keys[0]).then(limitCacheSize(name, size));
             }
         })
-
     })
-
-};//limit cache size
-
+};
 
 //installs service worker and caches assets
-self.addEventListener( 'install', evt => {
-
+self.addEventListener('install', evt => {
     //console.log('service worker installed');
     evt.waitUntil(
-    
     //opens and caches all assets in asset array
-      caches.open( staticCacheName ).then( ( cache ) => {
-
-        console.log( 'caching shell assets' );
-        cache.addAll( assets );
-
+      caches.open(staticCacheName).then((cache) => {
+        console.log('caching shell assets');
+        cache.addAll(assets);
       } )//end of caching
-
     );
-
-  } );//install service worker
+} );
 
 //activate service worker
-self.addEventListener( 'activate', evt => {
-
-    //console.log('serive worker has been activated');
+self.addEventListener('activate', evt => {
+    //console.log('service worker has been activated');
     evt.waitUntil(
-
         //removes old cache when new cache is found
-        caches.keys( ).then( keys => {
-
+        caches.keys().then(keys => {
             //console.log(keys);
-            return Promise.all( keys
+            return Promise.all(keys
                 /* all keys that are old caches stay in array. we then delete them */
-                .filter( key => key !== staticCacheName && key !== dynamicCacheName )
-                .map( key => caches.delete( key ) )
-                );
-
+                .filter(key => key !== staticCacheName && key !== dynamicCacheName)
+                .map(key => caches.delete(key))
+            );
         })
-
     );
+});
 
-});//activate service worker
-
-
-self.addEventListener( 'fetch', evt => {
-
+self.addEventListener('fetch', evt => {
     //console.log('fetch Event', evt);
     evt.respondWith(
-
         //check if requested asset is cashed
-        caches.match( evt.request ).then( 
-
+        caches.match(evt.request).then( 
             cacheRes => {
-
-                //return cach response if it is there.(get cashe) or if is empty fetch asset from server              
-                return cacheRes || fetch( evt.request ).then( fetchRes => {
-
+                //return cache response if it is there.(get cache) or if is empty fetch asset from server              
+                return cacheRes || fetch(evt.request).then(fetchRes => {
                     //add asset to dynamic array
-                    return caches.open( dynamicCacheName ).then( cache => {
-
-                        cache.put( evt.request.url, fetchRes.clone( ) );
-                        limitCacheSize( dynamicCacheName, 15 );
+                    return caches.open(dynamicCacheName).then(cache => {
+                        cache.put(evt.request.url, fetchRes.clone());
+                        limitCacheSize(dynamicCacheName, 15);
                         return fetchRes;
-
-                    } )
-
-                } );
-
-        } ).catch( ( ) => { 
-                
-                //if cant get asset. aka offline and not chached. Return the fallback.html page for request of html or php.
+                    })
+                });
+        }).catch(() => {            
+                //if cant get asset. aka offline and not cached. Return the fallback.html page for request of html or php.
                 if(evt.request.url.indexOf( '.html' ) > -1 || evt.request.url.indexOf( '.php' ) > -1 ) {
-
                     return caches.match( '/fallback.html' )
-
                 }
-
-        } )//check if requested asset is cashed
-
+        })
     );
-
 } );//fetch
