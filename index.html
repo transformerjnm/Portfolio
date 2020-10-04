@@ -56,7 +56,7 @@
 	<!--end of json-ld -->
 	<meta property="og:title" content="Jacob's Portfolio" >
 	<meta property="og:url" content="https://jacobportfolio.com/" >
-	<meta property="og:image" content="https://jacobportfolio.com/images/primaryimageofpage.png" >
+	<meta property="og:image" content="https://jacobportfolio.com/images/primaryImageOfPage.png" >
 	<meta name="description" content="I'm wanting to join a team that solves challenging problems. I'm devoted to inventing websites that revolutionize company’s ability to help people. One line at a time, let us change the world." />
 	<title>Jacob Mitchell Web Developer Portfolio</title>
 </head>
@@ -191,13 +191,13 @@
 						<!-- Unanimity image  -->
 						<div class="port_col_1_5 show_hover">
 							<a target="blank" href="https://unanimity.herokuapp.com/">
-								<img class="slideinimg left" lazy-src="images/unanimity.jpg" alt= " Unanimity messenger, Harmony through words">
+								<img class="slideIn left" lazy-src="images/unanimity.jpg" alt= " Unanimity messenger, Harmony through words">
 							</a>
 						</div>
 						<!-- Unanimity -->
 						<div class="port_col_5_12">
 							<a target="blank" href="https://unanimity.herokuapp.com/">
-								<h3>Unanimity</h3>									
+								<h3 class="slideIn right">Unanimity</h3>									
 							</a>						
 							<p>
 								With so many people in disagreement, it’s time to bring them back together. Come experience a fluid application powered by <span class="cursive">React.js</span> and find harmony though words. 									
@@ -209,7 +209,7 @@
 						<!-- PTC BMX  -->
 						<div class="port_col_1_8">
 							<a target="_blank" rel="noopener" href="./portfolio/ptc-bmx/index.php">
-								<h3>PTC BMX Race Track</h3>
+								<h3 class="slideIn left">PTC BMX Race Track</h3>
 							</a>
 							<p>
 								Their old site gave an <span class="cursive">unprofessional image</span> to users. Using <span class="cursive">materialize CSS</span> and <span class="cursive">PHP</span> I developed a professional easy to use website. 
@@ -221,19 +221,19 @@
 						<!-- PTC BMX  image -->
 						<div class="port_col_8_12 show_hover">						
 							<a target="_blank" rel="noopener" href="./portfolio/ptc-bmx/index.php">
-								<img class="slideinimg right" lazy-src="images/ptc_bmx_website.jpg" alt="Picture of PTC BMX website">
+								<img class="slideIn right" lazy-src="images/ptc_bmx_website.jpg" alt="Picture of PTC BMX website">
 							</a>
 						</div><!-- PTC BMX  image -->
 						<!-- MYSQL & PHP image -->
 						<div class="port_col_1_5 show_hover">
 							<a target="_blank" href="portfolio/webtemplate/public/index.php">
-								<img class="slideinimg left" lazy-src="images/webtemplate.jpg" alt="Web Templates, secure authentication website.">
+								<img class="slideIn left" lazy-src="images/webtemplate.jpg" alt="Web Templates, secure authentication website.">
 							</a>
 						</div><!-- MYSQL & PHP image  -->
 						<!-- MYSQL & PHP -->
 						<div class="port_col_5_12">
 							<a target="_blank" href="portfolio/webtemplate/public/index.php">
-								<h3>MYSQL and PHP Authentication Website</h3>
+								<h3 class="slideIn right">MYSQL and PHP Authentication Website</h3>
 							</a>						
 							<p>
 								They needed web based access control. Using <span class="cursive">PHP</span> and <span class="cursive">MYSQL</span> I developed a secure dynamic <span class="cursive">authentication</span> website. Now only logged in users can access their products.
@@ -249,9 +249,6 @@
 		<section id="skills" class="section-dark grid">
 			<h2>Web Technologies</h2>			
 			<div class="skill_col_1">
-				<img class="js skillIconHeight" lazy-src="images/fontawesome/js-square-brands.svg" alt="JavaScript logo" aria-label="JavaScript Logo">
-				<h4>JavaScript( ES6 )</h4>
-				<br>
 				<img class="skillIconHeight" lazy-src="images/fontawesome/react-brands.svg" alt="React.js Logo" aria-label="React.js logo">
 				<h4>React.js</h4>
 				<br>
@@ -261,14 +258,11 @@
 				<img class="skillIconHeight" lazy-src="images/fontawesome/react-brands.svg" alt="React.js Logo" aria-label="React.js logo">
 				<h4>React Router</h4>
 				<br>
+				<img class="js skillIconHeight" lazy-src="images/fontawesome/js-square-brands.svg" alt="JavaScript logo" aria-label="JavaScript Logo">
+				<h4>JavaScript( ES6, ES7, ES8 )</h4>
+				<br>
 			</div>
 			<div class="skill_col_2">
-				<img class="php skillIconHeight" lazy-src="images/fontawesome/php-brands.svg" alt="PHP Brand Logo" aria-label="PHP Brand Logo">
-				<h4>PHP7</h4>
-				<br>	
-				<img class="skillIconHeight" aria-label="MYSQL CRUD Logo" lazy-src="images/mysql.png" alt="MYSQL CRUD">
-				<h4>MYSQL</h4>
-				<br>
 				<img class="html skillIconHeight" aria-label="HTML Brand Logo" lazy-src="images/fontawesome/html5-brands.svg" alt="HTML Brand Logo">
 				<h4>HTML5</h4>
 				<br>
@@ -277,7 +271,19 @@
 				<br>
 				<img class="skillIconHeight" aria-label="Materlized CSS Framework logo" lazy-src="images/materlized-css.png" alt="Materlized CSS Framework logo">
 				<h4>Materialize css</h4>
-			</div>		
+			</div>	
+			<h2>Past Experience</h2>	
+			<div class="skill_col_1">
+				<img class="php skillIconHeight" lazy-src="images/fontawesome/php-brands.svg" alt="PHP Brand Logo" aria-label="PHP Brand Logo">
+				<h4>PHP7</h4>
+				<br>	
+				
+			</div>
+			<div class="skill_col_2">
+				<img class="skillIconHeight" aria-label="MYSQL CRUD Logo" lazy-src="images/mysql.png" alt="MYSQL CRUD">
+				<h4>MYSQL</h4>
+				<br>	
+			</div>
 		</section>
 		<section id="edu" class="section-light">
 			<h2>Education</h2>
@@ -299,13 +305,13 @@
 				<div class="col_container">
 					<div class="flex contact">
 						<a rel="noreferrer" href="https://www.linkedin.com/in/jacob-mitchell157/" target="_blank">
-							<img class="show_hover contact_icon" lazy-src="images/fontawesome/linkedin-brands.svg" alt="Linkedin Logo" aria-label="Jacob Mitchell's Linkedin link">
+							<img class="show_hover contact_icon slideIn left" lazy-src="images/fontawesome/linkedin-brands.svg" alt="Linkedin Logo" aria-label="Jacob Mitchell's Linkedin link">
 						</a>				
 						<a href="https://github.com/transformerjnm/" target="_blank" rel="noreferrer">
 							<img lazy-src="images/fontawesome/github-square-brands.svg" alt="GitHub Logo" aria-label="Jacob Mitchell's GitHub Link" class="show_hover contact_icon">
 						</a>						
 						<a href="mailto:jacob.mitchell157@gmail.com">
-							<img class="show_hover contact_icon" lazy-src="images/fontawesome/envelope-solid.svg" alt="Email image" aria-label="Jacob Mitchell's email link">
+							<img class="show_hover contact_icon slideIn right" lazy-src="images/fontawesome/envelope-solid.svg" alt="Email image" aria-label="Jacob Mitchell's email link">
 						</a>
 					</div>
 				</div>
