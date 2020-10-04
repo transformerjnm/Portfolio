@@ -16,7 +16,7 @@ include_once("../private/shared/header.php");
 	<p>Would you like to get free elegant website templates? Join us for outstanding products that serve you and your company!</p>
 
 	<div class="register_btn">
-		<a  href="https://jnmportfolio.000webhostapp.com/portfolio/webtemplate/public/register.php">Register Here</a>
+		<a  href="https://jacobportfolio.com/portfolio/webtemplate/public/register.php">Register Here</a>
 	</div>
 
 </section>

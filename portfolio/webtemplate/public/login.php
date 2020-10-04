@@ -43,8 +43,8 @@ if (is_post_request()){
 		<br>
 
 		<div class="register_btn">
-
-			<a  href="https://jnmportfolio.000webhostapp.com/portfolio/webtemplate/public/register.php">Register Here</a>
+		
+			<a  href="https://jacobportfolio.com/portfolio/webtemplate/public/register.php">Register Here</a>
 
 		</div>
 

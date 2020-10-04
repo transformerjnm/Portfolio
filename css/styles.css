@@ -27,6 +27,7 @@ body {
 	line-height: 250%;
 	background-color: var(--accent-background);
 	font-family: 'Quicksand', sans-serif;
+	overflow-x: hidden;
 }
 p::first-letter, h2::first-letter, h3::first-letter, h4::first-letter {
 	font-family: 'Pacifico', cursive;
@@ -269,10 +270,7 @@ footer {
 	margin: 0;
 }
 /*icon colors and size for img*/
-.html { color: blue; }
-.css { color: red; }
-.php { color: lightblue; }
-.js { color: purple; }
+.bootstrap { height: 1.25rem !important}
 .skillIconHeight { height: 1rem; }
 .contact_icon { height: 5rem; }
 .portfolio .col_container {
@@ -342,9 +340,11 @@ footer {
 	}
 }
 .fadeIn {
+	opacity: 0;
 	animation-name: fadeIn;
 	animation-fill-mode: forwards;
 	animation-duration: 2s;
+	animation-delay: 600ms;
 }
 @media only screen and (min-width: 500px ) {
 	svg { height: auto; }
