@@ -1,6 +1,6 @@
 :root {
-	--section-dark: rgba(13, 29, 43, 0.8);
-	--section-light: rgba(13, 29, 43, 0.3);
+	--section-dark: rgba(13, 29, 43, 1);
+	--section-light: rgba(13, 29, 43, 0.8);
 	--accent-background: #05101a;
 	--accent-rgba: rgba(5, 16, 26, 0.8);
 	--font-color: #FF7700;
@@ -35,9 +35,8 @@ p::first-letter, h2::first-letter, h3::first-letter, h4::first-letter {
 	/*this is so that the next letter isn't so close due to the increased size*/
 	letter-spacing: .25rem;
 }
-.cursive {
-	font-family: 'Pacifico', cursive;
-	letter-spacing: .15rem;
+.highlight {
+	font-size: 1.1rem;
 	font-weight: bold;
 }
 .github {
@@ -125,7 +124,7 @@ h2 {
 	-ms-clip-path: polygon(0 0, 50% 7vw, 100% 0%, 100% calc(100% - 7vw), 50% 100%, 0 calc(100% - 7vw));
 	-o-clip-path: polygon(0 0, 50% 7vw, 100% 0%, 100% calc(100% - 7vw), 50% 100%, 0 calc(100% - 7vw));
 	clip-path: polygon(0 0, 50% 7vw, 100% 0%, 100% calc(100% - 7vw), 50% 100%, 0 calc(100% - 7vw));
-	margin-bottom: -7vw;
+	margin-bottom: -7.1vw;
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 }
@@ -216,16 +215,6 @@ footer {
 	margin-top: .75rem;
 }
 .port_col_5_12 {
-	grid-column-start: 1;
-	grid-column-end: 12;
-	margin-top: .75rem;
-}
-.port_col_1_8 {
-	grid-column-start: 1;
-	grid-column-end: 12;
-	margin-top: .75rem;
-}
-.port_col_8_12 {
 	grid-column-start: 1;
 	grid-column-end: 12;
 	margin-top: .75rem;
