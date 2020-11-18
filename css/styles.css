@@ -156,6 +156,7 @@ footer {
 }
 .show_hover:hover, .show_hover:focus, a:hover, a:focus, h4:hover, h4:focus, h3:hover, h3:focus {
 	transform: scale(1.1);
+	z-index: 10;
 	transition-duration: 150ms;
 }
 /*About Me Section*/
