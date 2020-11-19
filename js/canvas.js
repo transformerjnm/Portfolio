@@ -3,7 +3,7 @@ window.addEventListener( "load", function() {
     var theCanvas = document.getElementById( 'canvas1' );
     //if the canvas created properly
     if(theCanvas && theCanvas.getContext) {
-        theCanvas.width = window.innerWidth;
+        theCanvas.width = document.documentElement.clientWidth || window.innerWidth;
         theCanvas.height = window.innerHeight;
         var ctx = theCanvas.getContext( "2d" );
         //if we have context of canvas
