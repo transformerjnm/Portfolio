@@ -3,16 +3,20 @@ const dynamicCacheName = 'dynamic-cache-v2';
 const assets = [
     '/',
     '/index.html',
-    '/fallback.html',
     'css/styles.css',
     '/js/app.js',
     '/js/canvas.js',
     '/js/intersectionobserver.js',
-    '/images/jacob_website_developer.jpg',
     '/images/materlized-css.png',
     '/images/mysql.png',
+    '/images/redux.png',
+    '/images/unanimity.png',
     '/images/ptc_bmx_website.jpg',
-    '/images/webtemplate.jpg',
+    '/images/georgia_gifts_react.png',
+    '/images/favicon-32x32.png',
+    'images/favicon-16x16.png',
+    '/images/fontawesome/bootstrap-brands.svg',
+    '/images/fontawesome/external-link-alt-solid.svg',
     '/images/fontawesome/css3-alt-brands.svg',
     '/images/fontawesome/envelope-solid.svg',
     '/images/fontawesome/github-square-brands.svg',
@@ -80,9 +84,9 @@ self.addEventListener('fetch', evt => {
                     })
                 });
         }).catch(() => {            
-                //if cant get asset. aka offline and not cached. Return the fallback.html page for request of html or php.
+                //if cant get asset. aka offline and not cached. Return the fallback page for request of html or php.
                 if(evt.request.url.indexOf( '.html' ) > -1 || evt.request.url.indexOf( '.php' ) > -1 ) {
-                    return caches.match( '/fallback.html' )
+                    return caches.match( '/index.html' )
                 }
         })
     );
