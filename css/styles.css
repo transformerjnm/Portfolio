@@ -3,7 +3,8 @@
 	--section-light: rgba(13, 29, 43, 0.8);
 	--accent-background: #05101a;
 	--accent-rgba: rgba(5, 16, 26, 0.8);
-	--font-color: #FF7700;
+	--action-color: #FF7700;
+	--font-color: #f6f6f6;
 	--background-img-path: url(../images/night_mountains_hero.svg);
 }
 /*-----Global Styles-----*/
@@ -156,14 +157,23 @@ footer {
 	transition-duration: 150ms;
 }
 /*About Me Section*/
-.button {
-	background-color: var(--font-color);
-	color: var(--accent-background);
+button {
+	display: block;
+	text-align: center;
+	background-color: var(--action-color);
+	width: 80vw;
 	max-width: 300px;
 	margin: auto;
 	border-radius: 15px;
+	border: none;
+	padding: .25rem;
 }
-.button a, .button a:visited{ color: var(--accent-background); }
+button a, button a:visited{ 
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.5rem;
+	font-weight: light;
+	color: var(--accent-background);
+ }
 #edu, #skill { grid-row-gap: 0; }
 #edu ul {
 	list-style-type: none;
