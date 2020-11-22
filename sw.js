@@ -42,23 +42,18 @@ const limitCacheSize = (name, size) => {
 
 //installs service worker and caches assets
 self.addEventListener('install', evt => {
-    //console.log('service worker installed');
     evt.waitUntil(
-    //opens and caches all assets in asset array
       caches.open(staticCacheName).then((cache) => {
-        console.log('caching shell assets');
         cache.addAll(assets);
-      } )//end of caching
+      } )
     );
 } );
 
-//activate service worker
+//activates service worker then removes old cache  when new cache is found
 self.addEventListener('activate', evt => {
-    //console.log('service worker has been activated');
     evt.waitUntil(
         //removes old cache when new cache is found
         caches.keys().then(keys => {
-            //console.log(keys);
             return Promise.all(keys
                 /* all keys that are old caches stay in array. we then delete them */
                 .filter(key => key !== staticCacheName && key !== dynamicCacheName)
@@ -69,25 +64,23 @@ self.addEventListener('activate', evt => {
 });
 
 self.addEventListener('fetch', evt => {
-    //console.log('fetch Event', evt);
     evt.respondWith(
         //check if requested asset is cashed
-        caches.match(evt.request).then( 
-            cacheRes => {
-                //return cache response if it is there.(get cache) or if is empty fetch asset from server              
-                return cacheRes || fetch(evt.request).then(fetchRes => {
-                    //add asset to dynamic array
-                    return caches.open(dynamicCacheName).then(cache => {
-                        cache.put(evt.request.url, fetchRes.clone());
-                        limitCacheSize(dynamicCacheName, 15);
-                        return fetchRes;
-                    })
-                });
+        caches.match(evt.request).then( cacheRes => {
+            //return cache response if it is there.(get cache) or if is empty fetch asset from server              
+            return cacheRes || fetch(evt.request).then(fetchRes => {
+                //add asset to dynamic array
+                return caches.open(dynamicCacheName).then(cache => {
+                    cache.put(evt.request.url, fetchRes.clone());
+                    limitCacheSize(dynamicCacheName, 15);
+                    return fetchRes;
+                })
+            });
         }).catch(() => {            
-                //if cant get asset. aka offline and not cached. Return the fallback page for request of html or php.
-                if(evt.request.url.indexOf( '.html' ) > -1 || evt.request.url.indexOf( '.php' ) > -1 ) {
-                    return caches.match( '/index.html' )
-                }
+            //if cant get asset. aka offline and not cached. Return the fallback page for request of html or php.
+            if(evt.request.url.indexOf( '.html' ) > -1 || evt.request.url.indexOf( '.php' ) > -1 ) {
+                return caches.match( '/index.html' )
+            }
         })
     );
-} );//fetch
+});
