@@ -45,8 +45,8 @@ p::first-letter, h2::first-letter, h3::first-letter, h4::first-letter {
 }
 /*-----Page order-----*/
 .canvas_container {
-	min-height: 100vh;
-	max-height: 100vh;
+	min-height: 90vh;
+	max-height: 90vh;
 	min-width: 100vw;
 	max-width: 100vw;
 }
@@ -135,7 +135,6 @@ h2 {
 	grid-column-start: 2;
 	grid-column-end: 11;
 	padding: .75rem;
-	margin: .75rem;
 }
 .flex {
 	display: flex;
@@ -274,7 +273,7 @@ button a, button a:visited{
 }
 /*phablet, tablet, desktop media query*/
 @media only screen and (min-width: 1200px) {
-	.herocontent { top: calc(50vh - 8rem); }
+	.herocontent { top: calc(30vh - 8rem); }
 	.hero-img { background-size: 100% 100%; }
 	.hero1 {
 		background-attachment: fixed;
