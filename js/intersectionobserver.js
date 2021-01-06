@@ -16,7 +16,7 @@ let preload_img = img => {
 
 const options = {
     threshold: 0,
-    rootMargin: "400px 0px 400px 0px",
+    rootMargin: "0px 0px 0px 0px",
 };
 
 const observer = new IntersectionObserver(entries => {

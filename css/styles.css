@@ -25,7 +25,7 @@ body {
 	color: var(--font-color);
 	text-align: left;
 	margin: 0;
-	line-height: 250%;
+	line-height: 200%;
 	background-color: var(--accent-background);
 	font-family: 'Quicksand', sans-serif;
 	overflow-x: hidden;
@@ -41,6 +41,19 @@ p::first-letter, h2::first-letter, h3::first-letter, h4::first-letter {
 	width: 2rem !important;
 	min-width: 2rem !important;
 	position: unset !important;
+	margin-left: .75rem;
+}
+.externalLink {
+	height: 1.8rem;
+	width: 1.8rem !important;
+	min-width: 2rem !important;
+	position: unset !important;
+	/** 
+	* .1rem margin makes the external link and github image centered.
+	* The github image has some space around it in the image file and the
+	* externalLnk image dose not have this space in the image file.
+	*/
+	margin: .1rem;
 	margin-left: .75rem;
 }
 /*-----Page order-----*/
@@ -168,6 +181,7 @@ button {
 	padding: .25rem;
 }
 button a, button a:visited{ 
+	text-decoration: none;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 1.5rem;
 	font-weight: light;
@@ -201,7 +215,7 @@ button a, button a:visited{
 	margin: 0;
 }
 /*icon colors and size for img*/
-.bootstrap { height: 1.25rem !important}
+.svgSkillIconHeight { height: 1.25rem !important}
 .skillIconHeight { height: 1rem; }
 .contact_icon { height: 5rem; }
 .portfolio .col_container {
@@ -217,10 +231,13 @@ button a, button a:visited{
 }
 .port_col_1_5 {
 	grid-column-start: 1;
-	grid-column-end: 12;
-	margin-top: .75rem;
+	grid-column-end: 12;	
 }
 .port_col_5_12 {
+	grid-column-start: 1;
+	grid-column-end: 12;
+}
+.port_col_full_width {
 	grid-column-start: 1;
 	grid-column-end: 12;
 	margin-top: .75rem;
@@ -236,7 +253,7 @@ button a, button a:visited{
 }
 .portfolio p {
 	margin: 0;
-	padding: .75rem;
+	padding: 0 .75rem .75rem .75rem;
 }
 .slideIn {
 	opacity: 0;
@@ -265,7 +282,6 @@ button a, button a:visited{
 	animation-name: fadeIn;
 	animation-fill-mode: forwards;
 	animation-duration: 2s;
-	animation-delay: 600ms;
 }
 @media only screen and (min-width: 500px ) {
 	svg { height: auto; }
@@ -283,20 +299,16 @@ button a, button a:visited{
 	.port_col_1_5 {
 		grid-column-start: 1;
 		grid-column-end: 6;
-		margin-top: .75rem;
 		min-height: 10vw;
 	}
 	.port_col_5_12 {
 		grid-column-start: 6;
 		grid-column-end: 12;
-		margin-top: .75rem;
 		min-height: 10vw;
 	}
 	.portfolio img {
 		max-width: 100%;
-		min-width: 100%;
-		position: relative;
-		top: 25%;
+		min-width: 100%;	
 	}
 	.portfolio p { min-height: 10vw; }
 	/*skills grid sizing*/
