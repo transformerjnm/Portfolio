@@ -4,69 +4,69 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- set browser color to them color. only supported in certain mobile devices as of 5/13/19-->
-		<meta name="theme-color" content="#FF7700">
-		<meta name="apple-mobile-web-app-status-bar" content="#FF7700">
+	<meta name="theme-color" content="#FF7700">
+	<meta name="apple-mobile-web-app-status-bar" content="#FF7700">
 	<!-- favicon.browser will use the correct one based on their needs -->
-		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-		<link rel="manifest" href="/manifest.json">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<!-- Google Fonts-->
-		<link   href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet noopener">
-		<link  href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet noopener">
+	<link   href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet noopener">
+	<link  href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet noopener">
 	<!-- SEO-->
 	<!--json-ld -->
-		<link rel="canonical" href="https://jacobportfolio.com" />
-		<script type='application/ld+json'>
-			{
-			"@context": "http://www.schema.org",
-			"@type": "person",
-			"name": "Jacob Mitchell",
-			"jobTitle": "Javascript Web Developer",
-				"image": "images/jacob_website_developer.jpg",
-			"url": "https://jacobportfolio.com"
-			}
-			</script>
-			<script type='application/ld+json'>
-			{
-				"@context": "http://www.schema.org",
-				"@type": "WebSite",
-			"name": "Jacob Mitchell Web Developer Portfolio",
-			"alternateName": "Jacob's Portfolio",
-			"url": "https://jacobportfolio.com"
-			}
-			</script>
-			<script type="application/ld+json">
-			{
-				"@context": "http://schema.org",
-				"@type": "WebPage",
-				"name": "Jacob Mitchell Web developer Portfolio",
-				"description": "I first began programming robots while in high school. Since then, I have grown into a professional web developer focused on exploiting the power of JavaScript languages and frameworks. Check out the rest of my website below to learn about my specific skills and recently completed projects.",
-				"publisher": {
-					"@type": "ProfilePage",
-					"name": "Jacob Mitchell"
-				},
-					"primaryImageOfPage":{
-							"@type": "ImageObject",
-							"url": "https://jacobportfolio.com/images/primaryimageofpage.png"
-					}
-			}
-		</script>
+	<link rel="canonical" href="https://jacobportfolio.com" />
+	<script type='application/ld+json'>
+	{
+		"@context": "http://www.schema.org",
+		"@type": "person",
+		"name": "Jacob Mitchell",
+		"jobTitle": "Javascript Web Developer",
+			"image": "images/jacob_website_developer.jpg",
+		"url": "https://jacobportfolio.com"
+	}
+	</script>
+	<script type='application/ld+json'>
+	{
+		"@context": "http://www.schema.org",
+		"@type": "WebSite",
+		"name": "Jacob Mitchell Web Developer Portfolio",
+		"alternateName": "Jacob's Portfolio",
+		"url": "https://jacobportfolio.com"
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "WebPage",
+		"name": "Jacob Mitchell Web developer Portfolio",
+		"description": "I first began programming robots while in high school. Since then, I have grown into a professional web developer focused on exploiting the power of JavaScript languages and frameworks. What problems can I solve for you?",
+		"publisher": {
+			"@type": "ProfilePage",
+			"name": "Jacob Mitchell"
+		},
+		"primaryImageOfPage":{
+				"@type": "ImageObject",
+				"url": "https://jacobportfolio.com/images/primaryimageofpage.png"
+		}
+	}
+	</script>
 	<!--end of json-ld -->
 	<meta property="og:title" content="Jacob's Portfolio" >
 	<meta property="og:url" content="https://jacobportfolio.com/" >
 	<meta property="og:image" content="https://jacobportfolio.com/images/primaryImageOfPage.png" >
-	<meta name="description" content="Since coding robots in highschool, three years ago, I've received my computer programming Associate degree. While in college, I started building websites and I'm loving it." />
+	<meta name="description" content="I first began programming robots while in high school. Since then, I have grown into a professional web developer focused on exploiting the power of JavaScript languages and frameworks. What problems can I solve for you?" />
 	<title>Jacob's Portfolio</title>
 </head>
 <body>
 	<header>
-		<div class="canvas_container">
-			<canvas id="canvas1">Your Browser dose not support HTML5 Canvas</canvas>
-			<div class="hero-img"></div>
+		<div class="canvasContainer">
+			<canvas id="starCanvas">Your Browser dose not support HTML5 Canvas</canvas>
+			<div class="heroImg"></div>
 		</div>
-		<div class="herocontent">
+		<div class="heroContent">
 			<svg  viewBox="0 100 210 297 " preserveAspectRatio="none">
 				<g
 				id="heroText">
@@ -145,96 +145,96 @@
 		</div>
 	</header>
 	<main>
-		<section id="me" class="section-dark">
+		<section class="sectionDark">
 			<div class="grid">
-				<div class="col_container">	
+				<div class="colContainer">	
 					<h2>Hello, I'm Jacob. Nice to meet you.</h2>		
 					<p>
 						I first began programming robots while in high school. Since then, I have grown into a professional web developer focused on exploiting the power of JavaScript languages and frameworks. What problems can I solve for you?
 					</p>
-					<Button class="show_hover"><a target="_blank" href="JacobMitchellResume.pdf" aria-label="Jacob Mitchell's resume link">Resume</a></Button>
+					<Button class="showHover"><a target="_blank" href="JacobMitchellResume.pdf" aria-label="Jacob Mitchell's resume link">Resume</a></Button>
 				</div>
 			</div>
 		</section>
-		<section id="port" class="section-light">
+		<section class="sectionLight">
 			<h2>My Recent Work</h2>
 			<div class="grid portfolio">
-				<div class="col_container">
+				<div class="colContainer">
 					<div class="grid">
 						<!-- Unanimity -->
-						<div class="port_col_full_width">
+						<div class="portColFullWidth">
 							<a target="blank" href="https://unanimity.herokuapp.com/">
 								<h3 class="fadeIn">Unanimity</h3>									
 							</a>
 						</div>
-						<div class="port_col_1_5 show_hover">
+						<div class="portColLeft showHover">
 							<a target="blank" href="https://unanimity.herokuapp.com/">
 								<img class="slideIn left" lazy-src="images/unanimity.png" alt= " Unanimity messenger, Harmony through words">
 							</a>
 						</div>
-						<div class="port_col_5_12">											
+						<div class="portColRight">											
 							<p>
 								With so many people in disagreement, it’s time to bring them back together. Experience a warm and welcoming environment that allows you to effortlessly connect with people. All this is capable by utilizing <Strong>Heroku, Firebase, React.js, Redux, React Router, and SCSS</Strong>.	
 							</p>
 							<a href="https://github.com/Blaine137/unanimityFIREBASE" target="_blank" rel="noreferrer">
-								<img lazy-src="images/fontawesome/github-square-brands.svg" alt="GitHub Logo" aria-label="Jacob Mitchell's GitHub Link" class="show_hover github"> 
+								<img lazy-src="images/fontawesome/github-square-brands.svg" alt="GitHub Logo" aria-label="Jacob Mitchell's GitHub Link" class="showHover github"> 
 							</a>
 							<a href="https://unanimity.herokuapp.com/" target="_blank" rel="noreferrer">
-								<img lazy-src="images/fontawesome/external-link-alt-solid.svg" alt="Unanimity website link" aria-label="Jacob Mitchell's GitHub Link" class="show_hover externalLink"> 
+								<img lazy-src="images/fontawesome/external-link-alt-solid.svg" alt="Unanimity website link" aria-label="Jacob Mitchell's GitHub Link" class="showHover externalLink"> 
 							</a>
 						</div>
 						<!-- PTC BMX -->
-						<div class="port_col_full_width">
+						<div class="portColFullWidth">
 							<a target="_blank" rel="noopener" href="https://jacobportfolio.com/portfolio/ptc-bmx/">
 								<h3 class="fadeIn">PTC BMX Race Track</h3>
 							</a>
 						</div>
-						<div class="port_col_1_5 show_hover">						
+						<div class="portColLeft showHover">						
 							<a target="_blank" rel="noopener" href="https://jacobportfolio.com/portfolio/ptc-bmx/">
 								<img class="slideIn left" lazy-src="images/ptc_bmx_website.jpg" alt="Picture of PTC BMX website">
 							</a>
 						</div>
-						<div class="port_col_5_12">					
+						<div class="portColRight">					
 							<p>
 								Their old site gave an <strong>unprofessional image</strong> to users. Using <strong>Materialize CSS Grid</strong> I created a mobile friendly website. To maintain consistent branding across the website I created reusable header, footer, and sponsor sections with <strong>PHP</strong>.    
 							</p>	
 							<a href="https://github.com/transformerjnm/PTC-BMX" target="_blank" rel="noreferrer">
-								<img lazy-src="images/fontawesome/github-square-brands.svg" alt="GitHub Logo" aria-label="Jacob Mitchell's GitHub Link" class="show_hover github"> 
+								<img lazy-src="images/fontawesome/github-square-brands.svg" alt="GitHub Logo" aria-label="Jacob Mitchell's GitHub Link" class="showHover github"> 
 							</a>
 							<a href="https://jacobportfolio.com/portfolio/ptc-bmx/" target="_blank" rel="noreferrer">
-								<img lazy-src="images/fontawesome/external-link-alt-solid.svg" alt="PTC BMX Website link" aria-label="Jacob Mitchell's GitHub Link" class="show_hover externalLink"> 
+								<img lazy-src="images/fontawesome/external-link-alt-solid.svg" alt="PTC BMX Website link" aria-label="Jacob Mitchell's GitHub Link" class="showHover externalLink"> 
 							</a>
 						</div>					
 						<!-- Georgia Gifts -->
-						<div class="port_col_full_width">
+						<div class="portColFullWidth">
 							<a target="_blank" href="https://georgia-gifts.herokuapp.com/" rel="noreferrer">
 								<h3 class="fadeIn">Georgia Gifts</h3>
 							</a>
 						</div>
-						<div class="port_col_1_5 show_hover">
+						<div class="portColLeft showHover">
 							<a target="_blank" href="https://georgia-gifts.herokuapp.com/" rel="noreferrer">
 								<img class="slideIn left" lazy-src="images/georgia_gifts_react.png" alt="Georgia Gifts is a small website that demonstrates react.js website development.">
 							</a>
 						</div>
-						<div class="port_col_5_12">													
+						<div class="portColRight">													
 							<p>
 								What vacation is complete without souvenirs and gifts for the whole family? Find all your needs 
 								at Georgia Gifts website that is powered by <strong>React.js, React Router, ReactStrap, Node.js, Express, Passport.js, Stripe, and Mongo DB.</strong>
 							</p>						
 							<a href="https://github.com/transformerjnm/Gerogia-Gifts-MERN" target="_blank" rel="noreferrer">
-								<img lazy-src="images/fontawesome/github-square-brands.svg" alt="GitHub Logo" aria-label="Link to Georgia Gifts Project" class="show_hover github"> 
+								<img lazy-src="images/fontawesome/github-square-brands.svg" alt="GitHub Logo" aria-label="Link to Georgia Gifts Project" class="showHover github"> 
 							</a>
 							<a href="https://georgia-gifts.herokuapp.com/" target="_blank" rel="noreferrer">
-								<img lazy-src="images/fontawesome/external-link-alt-solid.svg" alt="Georgia Gifts Website link" aria-label="Jacob Mitchell's GitHub Link" class="show_hover externalLink"> 
+								<img lazy-src="images/fontawesome/external-link-alt-solid.svg" alt="Georgia Gifts Website link" aria-label="Jacob Mitchell's GitHub Link" class="showHover externalLink"> 
 							</a>
 						</div><!-- Georgia Gifts -->				
 					</div><!-- grid -->
 				</div><!-- col container -->
 			</div><!-- grid portfolio -->
 		</section><!-- portfolio -->
-		<section id="skills" class="section-dark grid">
+		<section id="skills" class="sectionDark grid">
 			<h2>Current Web Technologies</h2>			
-			<div class="skill_col_1">
+			<div class="skillColLeft">
 				<img class="skillIconHeight" lazy-src="images/fontawesome/react-brands.svg" alt="React.js Logo" aria-label="React.js logo">
 				<h4>React.js</h4>
 				<br>
@@ -255,7 +255,7 @@
 				<h4>Mongo DB</h4>
 				<br>
 			</div>
-			<div class="skill_col_2">
+			<div class="skillColRight">
 				<img class="skillIconHeight" aria-label="HTML Brand Logo" lazy-src="images/fontawesome/html5-brands.svg" alt="HTML Brand Logo">
 				<h4>HTML5</h4>
 				<br>
@@ -265,20 +265,20 @@
 				<img class="skillIconHeight" aria-label="Materlized CSS Framework logo" lazy-src="images/materlized-css.png" alt="Materlized CSS Framework logo">
 				<h4>Materialize CSS</h4>
 				<br>
-				<img class="svgSkillIconHeight skillIconHeight" aria-label="Bootstrap CSS Framework logo" lazy-src="images/fontawesome/bootstrap-brands.svg" alt="Bootstrap CSS Framework logo">
+				<img class="svgSkillIconHeight" aria-label="Bootstrap CSS Framework logo" lazy-src="images/fontawesome/bootstrap-brands.svg" alt="Bootstrap CSS Framework logo">
 				<h4>Bootstrap CSS</h4>
 				<br>
-				<img class="svgSkillIconHeight skillIconHeight" aria-label="Express library logo" lazy-src="images/fontawesome/node-js-brands.svg" alt="Express library logo">
+				<img class="svgSkillIconHeight" aria-label="Express library logo" lazy-src="images/fontawesome/node-js-brands.svg" alt="Express library logo">
 				<h4>Express</h4>
 				<br>
 			</div>									
 		</section>
-		<section id="edu" class="section-light">
+		<section id="edu" class="sectionLight">
 			<h2>Education</h2>
 			<div class="grid">
-				<div class="col_container">
+				<div class="colContainer">
 					<ul>
-						<li><img class="grad_cap" lazy-src="images/fontawesome/graduation-cap-solid.svg" alt="Graduation Cap Image">&nbsp;Computer Programming Associate</li>
+						<li><img class="gradCap" lazy-src="images/fontawesome/graduation-cap-solid.svg" alt="Graduation Cap Image">&nbsp;Computer Programming Associate</li>
 						<ul>
 							<li>&nbsp;Southern Crescent Technical College</li>
 							<li>&nbsp;December 2019</li>
@@ -287,9 +287,9 @@
 						</ul>
 					</ul>					
 				</div>
-				<div class="col_container">
+				<div class="colContainer">
 					<ul>
-						<li><img class="grad_cap" lazy-src="images/fontawesome/graduation-cap-solid.svg" alt="Graduation Cap Image">&nbsp;Full-stack Coding Bootcamp</li>
+						<li><img class="gradCap" lazy-src="images/fontawesome/graduation-cap-solid.svg" alt="Graduation Cap Image">&nbsp;Full-stack Coding Bootcamp</li>
 						<ul>
 							<li>&nbsp;Nucamp</li>
 							<li>&nbsp;November 2020</li>
@@ -298,18 +298,18 @@
 				</div>	
 			</div>
 		</section>
-		<section id="contact" class="section-dark">
+		<section class="sectionDark">
 			<div class="grid ">
-				<div class="col_container">
-					<div class="flex contact">
+				<div class="colContainer">
+					<div class="flex">
 						<a rel="noreferrer" href="https://www.linkedin.com/in/jacob-mitchell157/" target="_blank">
-							<img class="show_hover contact_icon slideIn left" lazy-src="images/fontawesome/linkedin-brands.svg" alt="Linkedin Logo" aria-label="Jacob Mitchell's Linkedin link">
+							<img class="showHover contactIcon slideIn left" lazy-src="images/fontawesome/linkedin-brands.svg" alt="Linkedin Logo" aria-label="Jacob Mitchell's LinkedIn link">
 						</a>				
 						<a href="https://github.com/transformerjnm/" target="_blank" rel="noreferrer">
-							<img lazy-src="images/fontawesome/github-square-brands.svg" alt="GitHub Logo" aria-label="Jacob Mitchell's GitHub Link" class="show_hover contact_icon fadeIn">
+							<img lazy-src="images/fontawesome/github-square-brands.svg" alt="GitHub Logo" aria-label="Jacob Mitchell's GitHub Link" class="showHover contactIcon fadeIn">
 						</a>						
 						<a href="mailto:jacob.mitchell157@gmail.com">
-							<img class="show_hover contact_icon slideIn right" lazy-src="images/fontawesome/envelope-solid.svg" alt="Email image" aria-label="Jacob Mitchell's email link">
+							<img class="showHover contactIcon slideIn right" lazy-src="images/fontawesome/envelope-solid.svg" alt="Email image" aria-label="Jacob Mitchell's email link">
 						</a>
 					</div>
 				</div>
