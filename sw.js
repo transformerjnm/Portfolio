@@ -1,5 +1,5 @@
-const staticCacheName = 'site-static-v1';
-const dynamicCacheName = 'dynamic-cache-v2';
+const staticCacheName = 'site-static-v3';
+const dynamicCacheName = 'dynamic-cache-v3';
 const assets = [
     '/',
     '/index.html',
@@ -8,11 +8,12 @@ const assets = [
     '/js/canvas.js',
     '/js/intersectionobserver.js',
     '/images/materlized-css.png',
+    '/images/night_mountains_hero.svg',
     '/images/mysql.png',
     '/images/redux.png',
-    '/images/unanimity.png',
-    '/images/ptc_bmx_website.jpg',
-    '/images/georgia_gifts_react.png',
+    '/images/unanimity.webp',
+    '/images/ptc_bmx_website.webp',
+    '/images/georgia-gifts.webp',
     '/images/favicon-32x32.png',
     'images/favicon-16x16.png',
     '/images/fontawesome/bootstrap-brands.svg',
@@ -33,7 +34,7 @@ const assets = [
 const limitCacheSize = (name, size) => {
     caches.open(name).then(cache => {
         cache.keys().then(keys => {
-            if(keys.length > size) {
+            if (keys.length > size) {
                 cache.delete(keys[0]).then(limitCacheSize(name, size));
             }
         })
@@ -43,11 +44,11 @@ const limitCacheSize = (name, size) => {
 //installs service worker and caches assets
 self.addEventListener('install', evt => {
     evt.waitUntil(
-      caches.open(staticCacheName).then((cache) => {
-        cache.addAll(assets);
-      } )
+        caches.open(staticCacheName).then((cache) => {
+            cache.addAll(assets);
+        })
     );
-} );
+});
 
 //activates service worker then removes old cache  when new cache is found
 self.addEventListener('activate', evt => {
@@ -66,7 +67,7 @@ self.addEventListener('activate', evt => {
 self.addEventListener('fetch', evt => {
     evt.respondWith(
         //check if requested asset is cashed
-        caches.match(evt.request).then( cacheRes => {
+        caches.match(evt.request).then(cacheRes => {
             //return cache response if it is there.(get cache) or if is empty fetch asset from server              
             return cacheRes || fetch(evt.request).then(fetchRes => {
                 //add asset to dynamic array
@@ -76,10 +77,10 @@ self.addEventListener('fetch', evt => {
                     return fetchRes;
                 })
             });
-        }).catch(() => {            
+        }).catch(() => {
             //if cant get asset. aka offline and not cached. Return the fallback page for request of html or php.
-            if(evt.request.url.indexOf( '.html' ) > -1 || evt.request.url.indexOf( '.php' ) > -1 ) {
-                return caches.match( '/index.html' )
+            if (evt.request.url.indexOf('.html') > -1 || evt.request.url.indexOf('.php') > -1) {
+                return caches.match('/index.html')
             }
         })
     );

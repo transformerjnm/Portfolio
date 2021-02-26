@@ -216,6 +216,8 @@ button a, button a:visited{
 .portfolio img {
 	max-width: 80vw;
 	min-width: 80vw;
+	width: 80vw;
+	height: auto;
 }
 .portfolio p {
 	margin: 0;
@@ -249,7 +251,7 @@ button a, button a:visited{
 	animation-fill-mode: forwards;
 	animation-duration: 2s;
 }
-.contactIcon { height: 5rem; }
+.contactIcon { height: 5rem; width: 5rem; }
 footer {
 	background-color: var(--accent-background);
 	position: relative;
@@ -281,6 +283,8 @@ footer {
 	.portfolio img {
 		max-width: 100%;
 		min-width: 100%;	
+		width: 100%;
+		height: auto;
 	}
 	.skillColLeft {
 		grid-column-start: 2;
