@@ -3,7 +3,7 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# 1 week for most static assets
+# 1 year for most static assets
 <filesMatch ".(css|jpg|jpeg|png|svg|gif|js|ico)$">
-Header set Cache-Control "max-age=2592000, public"
+Header set Cache-Control "max-age=31536000, public"
 </filesMatch>
